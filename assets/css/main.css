@@ -7,8 +7,32 @@ html {
 }
 
 body {
-  font-family: Sniglet, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  padding-top: 1rem;
+  color: #cfb;
+  background-color: #222;
+}
+
+main {
   color: #222;
   background-color: #cfb;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #bbb;
+  background-color: #222;
 }
