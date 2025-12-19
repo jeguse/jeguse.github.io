@@ -1,14 +1,12 @@
 ---
-title: "Jonah Guse"
+title: "Home"
 layout: default
 ---
-
-# Jonah Guse
 
 ## About Me
 
 I am a first-year mathematics PhD student at UC Davis.
 
-## Contact Me
+## Contact
 
 - Email: jeguse[at]ucdavis[dot]edu
