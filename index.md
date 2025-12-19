@@ -1,5 +1,6 @@
 ---
 title: "Jonah Guse"
+layout: default
 ---
 
 # Jonah Guse
