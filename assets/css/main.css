@@ -23,10 +23,43 @@ header {
   background-color: #222;
 }
 
+.nav-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 main {
   color: #222;
   background-color: #cfb;
   padding-bottom: 2rem;
+}
+
+main a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
 }
 
 footer {
