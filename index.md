@@ -9,8 +9,10 @@ layout: default
     
 ![Jonah Guse](/assets/images/jeguse.jpg)
 
-<i class="fa-regular fa-envelope"></i>: jeguse[at]ucdavis[dot]edu
-<i class="fa-spotify"></i>: [jeguse](https://github.com/jeguse)
+<i class="fa-regular fa-envelope"></i> jeguse[at]ucdavis[dot]edu
+
+<i class="fa-brands fa-github"></i> [GitHub](https://github.com/jeguse)
+
 <!-- - Spotify: [jongus](https://open.spotify.com/user/av0zvsdkik8p5x02eflvtpml1) -->
     
 </div>
