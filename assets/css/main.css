@@ -40,3 +40,23 @@ footer {
   margin: 0 auto;
   padding: 1rem;
 }
+
+.bio-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.left-bio {
+  flex: 1 1 250px;
+}
+
+.right-bio {
+  flex: 1 1 450px;
+}
+
+.left-bio img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
