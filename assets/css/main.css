@@ -23,6 +23,12 @@ header {
   background-color: #222;
 }
 
+.site-title {
+  font-size: 3rem;
+  color: inherit;
+  text-decoration: none;
+}
+
 .nav-inner {
   max-width: 800px;
   margin: 0 auto;
