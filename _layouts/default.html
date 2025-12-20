@@ -10,9 +10,18 @@
 
   <body>
     <header>
-      <div class="container">
-        <h1>{{ site.title }}</h1>
-      </div>
+      <nav class="site-nav">
+        <div class="nav-inner">
+          <a class="site-title" href="{{ '/' | relative_url }}">
+            {{ site.title }}
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/cv/' | relative_url }}">CV</li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
