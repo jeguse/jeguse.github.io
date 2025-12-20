@@ -11,6 +11,8 @@ layout: default
 
 <i class="fa-solid fa-envelope"></i> jeguse[at]ucdavis[dot]edu
 
+<i class="fa-solid fa-location-dot"></i> Davis, CA
+
 <i class="fa-brands fa-github"></i> [GitHub](https://github.com/jeguse)
 
 <!-- <i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/user/av0zvsdkik8p5x02eflvtpml1) -->
