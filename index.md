@@ -11,7 +11,7 @@ layout: default
 
 - Email: jeguse[at]ucdavis[dot]edu
 - GitHub: [jeguse](https://github.com/jeguse)
-- Spotify: [jongus](https://open.spotify.com/user/av0zvsdkik8p5x02eflvtpml1)
+<!-- - Spotify: [jongus](https://open.spotify.com/user/av0zvsdkik8p5x02eflvtpml1) -->
     
 </div>
   
