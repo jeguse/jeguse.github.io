@@ -3,9 +3,9 @@ title: "Home"
 layout: default
 ---
 
-<div class="bio-columns">
+<div class="bio-columns" markdown="1">
   
-<div class="left-bio">
+<div class="left-bio" markdown="1">
     
 ![Jonah Guse](/assets/images/jeguse.jpg)
 
@@ -15,7 +15,7 @@ layout: default
     
 </div>
   
-<div class="right-bio">
+<div class="right-bio" markdown="1">
 
 ## About Me
 
