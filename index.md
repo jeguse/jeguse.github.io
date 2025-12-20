@@ -13,7 +13,7 @@ layout: default
 
 <i class="fa-brands fa-github"></i> [GitHub](https://github.com/jeguse)
 
-<i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/user/av0zvsdkik8p5x02eflvtpml1)
+<!-- <i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/user/av0zvsdkik8p5x02eflvtpml1) -->
     
 </div>
   
