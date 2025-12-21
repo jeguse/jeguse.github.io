@@ -13,7 +13,7 @@ layout: default
 
 <i class="fa-solid fa-location-dot"></i> Davis, CA
 
-<i class="fa-brands fa-github"></i> [GitHub](https://github.com/jeguse)
+<!-- <i class="fa-brands fa-github"></i> [GitHub](https://github.com/jeguse) -->
 
 <!-- <i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/user/av0zvsdkik8p5x02eflvtpml1) -->
     
@@ -25,7 +25,7 @@ layout: default
 
 I am a first-year mathematics PhD student at UC Davis. My research interests are broadly in the fields of algebra, combinatorics, complexity theory, and information theory.
 
-I completed my undergraduate studies at UW-Madison, where I double-majored in mathematics and computer science.
+I completed my undergraduate studies at the University of Wisconsin–Madison, where I double-majored in mathematics and computer science.
 
 </div>
 
