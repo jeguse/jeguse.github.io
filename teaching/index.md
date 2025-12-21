@@ -1,5 +1,10 @@
+---
+title: "Teaching"
+layout: default
+---
+
 # Teaching Resources
 
-## Math 021B Worksheets
+## Math 21B Discussion Worksheets
 
-(Under construction, come back soon!)
+## (under construction, check back soon!)
