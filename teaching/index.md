@@ -24,4 +24,10 @@ Below are the worksheets I wrote for Math 21B when I was a TA for the course in 
 [Week 5 Problems (PDF)]({{ "/assets/pdf/d05.pdf" | relative_url }})
 <iframe src="{{ '/assets/pdf/d05.pdf' | relative_url }}" class="worksheet-embed"></iframe>
 
+[Week 8 Problems (PDF)]({{ "/assets/pdf/d08.pdf" | relative_url }})
+<iframe src="{{ '/assets/pdf/d08.pdf' | relative_url }}" class="worksheet-embed"></iframe>
+
+[Week 10 Problems (PDF)]({{ "/assets/pdf/d10.pdf" | relative_url }})
+<iframe src="{{ '/assets/pdf/d10.pdf' | relative_url }}" class="worksheet-embed"></iframe>
+
 ## (under construction, check back soon!)
