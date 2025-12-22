@@ -99,3 +99,10 @@ footer {
   height: auto;
   border-radius: 8px;
 }
+
+.worksheet-embed {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  border-radius: 8px;
+}
