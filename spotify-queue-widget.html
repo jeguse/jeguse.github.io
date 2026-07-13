@@ -1,0 +1,114 @@
+<!--
+  Paste this block into your GitHub Pages site (anywhere in the page body).
+  Set WORKER_URL below to your deployed Worker's URL.
+-->
+<div id="spotify-queue-widget" style="max-width: 420px; font-family: system-ui, sans-serif;">
+  <label for="sqw-input" style="display:block; font-size:14px; margin-bottom:6px;">
+    Add a song to my queue
+  </label>
+  <input
+    id="sqw-input"
+    type="text"
+    placeholder="Search for a track..."
+    autocomplete="off"
+    style="width:100%; box-sizing:border-box; padding:8px 10px; font-size:14px;
+           border:1px solid #ccc; border-radius:6px;"
+  />
+  <ul id="sqw-results" style="list-style:none; margin:8px 0 0; padding:0;"></ul>
+  <p id="sqw-status" role="status" aria-live="polite"
+     style="font-size:13px; color:#666; min-height:1.2em; margin:8px 0 0;"></p>
+</div>
+
+<script>
+(function () {
+  const WORKER_URL = "https://spotify-queue-proxy.jeguse.workers.dev";
+
+  const input = document.getElementById("sqw-input");
+  const results = document.getElementById("sqw-results");
+  const status = document.getElementById("sqw-status");
+
+  let debounceTimer = null;
+
+  function setStatus(text) {
+    status.textContent = text;
+  }
+
+  function renderResults(tracks) {
+    results.innerHTML = "";
+    if (tracks.length === 0) {
+      setStatus("No matches.");
+      return;
+    }
+    setStatus("");
+    for (const track of tracks) {
+      const li = document.createElement("li");
+      li.style.cssText =
+        "display:flex; align-items:center; gap:10px; padding:6px 0; border-bottom:1px solid #eee;";
+
+      const img = document.createElement("img");
+      img.src = track.image || "";
+      img.alt = "";
+      img.style.cssText = "width:40px; height:40px; border-radius:4px; flex-shrink:0; background:#eee;";
+
+      const info = document.createElement("div");
+      info.style.cssText = "flex:1; min-width:0;";
+      info.innerHTML =
+        `<div style="font-size:14px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${track.name}</div>` +
+        `<div style="font-size:12px; color:#666; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${track.artist}</div>`;
+
+      const button = document.createElement("button");
+      button.textContent = "Add";
+      button.style.cssText =
+        "padding:6px 12px; font-size:13px; border:1px solid #ccc; border-radius:6px; background:#fff; cursor:pointer;";
+      button.addEventListener("click", () => addToQueue(track.uri, button));
+
+      li.append(img, info, button);
+      results.appendChild(li);
+    }
+  }
+
+  async function search(query) {
+    setStatus("Searching...");
+    try {
+      const res = await fetch(`${WORKER_URL}/api/search?q=${encodeURIComponent(query)}`);
+      const data = await res.json();
+      if (!data.ok) {
+        setStatus(data.message || "Search failed.");
+        return;
+      }
+      renderResults(data.tracks);
+    } catch {
+      setStatus("Couldn't reach the search service.");
+    }
+  }
+
+  async function addToQueue(uri, button) {
+    button.disabled = true;
+    setStatus("Adding to queue...");
+    try {
+      const res = await fetch(`${WORKER_URL}/api/queue`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ uri }),
+      });
+      const data = await res.json();
+      setStatus(data.message || (data.ok ? "Added." : "Something went wrong."));
+    } catch {
+      setStatus("Couldn't reach the queue service.");
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  input.addEventListener("input", () => {
+    clearTimeout(debounceTimer);
+    const query = input.value.trim();
+    if (query.length < 2) {
+      results.innerHTML = "";
+      setStatus("");
+      return;
+    }
+    debounceTimer = setTimeout(() => search(query), 350);
+  });
+})();
+</script>
