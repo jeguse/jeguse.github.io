@@ -23,7 +23,7 @@ layout: default
 
 ## About Me
 
-I am a first-year mathematics PhD student at UC Davis. My research interests are broadly in the fields of algebra, combinatorics, complexity theory, and information theory.
+I am a second-year mathematics PhD student at UC Davis. My research interests are broadly in the fields of topology and quantum information theory.
 
 I completed my undergraduate studies at the University of Wisconsin–Madison, where I double-majored in mathematics and computer science.
 
