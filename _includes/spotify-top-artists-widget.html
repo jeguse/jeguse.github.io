@@ -1,0 +1,29 @@
+<div id="top-artists-widget">
+  <ul id="artist-results"></ul>
+  <p id="artist-status" role="status" aria-live="polite"></p>
+</div>
+
+<script>
+(async function () {
+  const WORKER_URL = "https://spotify-queue-proxy.jeguse.workers.dev";
+
+  const results = document.getElementById("artist-results");
+  const status = document.getElementById("artist-status");
+
+  const res = await fetch(`${WORKER_URL}/api/artists`);
+  const data = await res.json();
+  const artists = data.artists;
+  for (const artist of artists) {
+    const li = document.createElement("li");
+
+    const img = document.createElement("img");
+    img.src = artist.image || "";
+
+    const info = document.createElement("div");
+    info.innerHTML = `<div>${artist.name}</div>`;
+
+    li.append(img, info);
+    results.appendChild(li);
+  }
+})();
+</script>
