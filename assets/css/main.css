@@ -106,3 +106,15 @@ footer {
   display: block;
   border-radius: 8px;
 }
+
+.artist-list img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.track-list img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+}
