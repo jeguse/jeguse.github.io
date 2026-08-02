@@ -1,0 +1,31 @@
+<div id="top-tracks-widget">
+  <ul id="track-results"></ul>
+  <p id="track-status" role="status" aria-live="polite"></p>
+</div>
+
+<script>
+(async function () {
+  const WORKER_URL = "https://spotify-queue-proxy.jeguse.workers.dev";
+
+  const results = document.getElementById("track-results");
+  const status = document.getElementById("track-status");
+
+  const res = await fetch(`${WORKER_URL}/api/tracks`);
+  const data = await res.json();
+  const tracks = data.tracks;
+  for (const track of tracks) {
+    const li = document.createElement("li");
+
+    const img = document.createElement("img");
+    img.src = track.image || "";
+
+    const info = document.createElement("div");
+    info.innerHTML =
+      `<div>${track.name}</div>` +
+      `<div>${track.artist}</div>`;
+
+    li.append(img, info);
+    results.appendChild(li);
+  }
+})();
+</script>
