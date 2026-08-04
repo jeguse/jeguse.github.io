@@ -21,8 +21,8 @@
 
     const info = document.createElement("div");
     info.innerHTML =
-      `<div>${track.name}</div>` +
-      `<div>${track.artist}</div>`;
+      `<div class="track-name">${track.name}</div>` +
+      `<div class="track-artist">${track.artist}</div>`;
 
     li.append(img, info);
     results.appendChild(li);
