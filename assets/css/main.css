@@ -107,19 +107,7 @@ footer {
   border-radius: 8px;
 }
 
-.artist-list img {
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-}
-
-.track-list img {
-  height: 40px;
-  width: auto;
-  border-radius: 4px;
-}
-
-.top-artists-widget ul {
+.artist-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -127,9 +115,27 @@ footer {
   padding: 0;
 }
 
-.top-artists-widget li {
+.artist-list li {
   flex: 1 1 200px;
   background-color: #222;
   color: #cfb;
   border-radius: 8px;
+}
+
+.artist-list img {
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.track-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.track-list img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
 }
