@@ -125,12 +125,8 @@ footer {
   justify-content: center;
   width: 200px;
   height: 200px;
-  border: solid;
   background-color: #cfb;
-  border-width: 4px;
-  border-color: #222;
   color: #222;
-  border-radius: 8px;
   align-items: center;
 }
 
@@ -145,6 +141,7 @@ footer {
   margin: 0;
   padding: 0;
   justify-content: center;
+  gap: 12px;
 }
 
 .track-list li {
@@ -154,7 +151,7 @@ footer {
 }
 
 .track-list img {
-  height: 40px;
+  height: 75px;
   width: auto;
   border-radius: 4px;
 }
