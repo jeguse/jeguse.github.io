@@ -1,0 +1,17 @@
+name = "spotify-queue-proxy"
+main = "index.js"
+compatibility_date = "2026-07-01"
+
+# Obtain CLIENT_ID from spotify dev portal
+# ALLOWED_ORIGIN is the site I want the data to appear on
+[vars]
+CLIENT_ID = "c72b2fba6066479aae8dbf7d34dde38a"
+ALLOWED_ORIGIN = "https://jeguse.github.io"
+
+# KV namespace to store refresh tokens, corresponding timestamps, and rate limit data
+# Use `wrangler kv namespace create SPOTIFY_KV` to get the id below:
+[[kv_namespaces]]
+binding = "SPOTIFY_KV"
+id = "7a9be46dc2724da79d0fbad1e131f18c"
+
+# Use `wrangler secret put CLIENT_SECRET` to store the spotify secret for security purposes
