@@ -116,10 +116,15 @@ footer {
 }
 
 .artist-list li {
-  flex: 1 1 200px;
-  background-color: #222;
-  color: #cfb;
+  flex: 0 1 200px;
+  height: 200px;
+  background-color: #cfb;
+  border-width: 4px;
+  border-color: #222;
+  color: #222;
   border-radius: 8px;
+  align-items: center;
+  padding-right: 8px;
 }
 
 .artist-list img {
