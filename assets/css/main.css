@@ -112,7 +112,6 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -138,6 +137,7 @@ footer {
 
 .track-list {
   list-style-type: none;
+  display: flex;
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -145,6 +145,7 @@ footer {
 }
 
 .track-list li {
+  width: max-content;
   display: flex;
   align-items: center;
   gap: 10px;
