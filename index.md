@@ -21,6 +21,8 @@ layout: default
   
 <div class="right-bio" markdown="1">
 
+_For the Colorado politician, see [Joe Neguse](https://en.wikipedia.org/wiki/Joe_Neguse)._
+
 ## About Me
 
 I am a second-year mathematics PhD student at UC Davis. My research interests are broadly in the fields of topology and quantum information theory.
